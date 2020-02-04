@@ -91,6 +91,10 @@ GEM
       warden (~> 1.2.3)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.7.5)
+    dotenv-rails (2.7.5)
+      dotenv (= 2.7.5)
+      railties (>= 3.2, < 6.1)
     erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.11.3)
@@ -138,6 +142,7 @@ GEM
     minitest (5.13.0)
     msgpack (1.3.1)
     mustermann (1.0.3)
+    mysql2 (0.5.3)
     netrc (0.11.0)
     nio4r (2.5.2)
     nokogiri (1.10.7)
@@ -259,9 +264,11 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
+  dotenv-rails
   jbuilder (~> 2.5)
   kaminari (~> 1.1.1)
   listen (>= 3.0.5, < 3.2)
+  mysql2
   puma (~> 3.11)
   rails (~> 5.2.4)
   refile!
@@ -280,4 +287,4 @@ RUBY VERSION
    ruby 2.5.7p206
 
 BUNDLED WITH
-   2.0.2
+   2.1.4
